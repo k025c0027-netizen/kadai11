@@ -1,0 +1,131 @@
+
+/* ===== 全体共通 ===== */
+body {
+    margin: 0;
+    font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", sans-serif;
+    background: #0d0f1a;
+    color: white;
+  }
+  
+  /* ===== ヘッダー ===== */
+  .sub-header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #d60000, #002bff);
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  }
+  
+  /* ===== 上部メイン画像 ===== */
+  .anime-image {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .anime-image img {
+    width: 90%;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  }
+  
+  /* ===== 背景＋文章セクション ===== */
+  .worldview {
+    position: relative;
+    margin-top: 60px;
+    padding: 100px 20px;
+    background-image: url("images/heroaca-bg.jpg"); /* 背景画像 */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+  }
+  
+  /* 背景を暗くするオーバーレイ */
+  .worldview::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  /* テキスト本体 */
+  .worldview-text {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 35px;
+    border-radius: 15px;
+    line-height: 1.9;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  }
+  
+  .worldview-text h2,
+  .worldview-text h3 {
+    color: #ffcc00;
+  }
+  
+  .worldview-text ul {
+    padding-left: 20px;
+  }
+  
+  /* ===== 公式サイトボタン ===== */
+  .official-button {
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .official-button a {
+    display: inline-block;
+    background: #ffcc00;
+    color: black;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .official-button a:hover {
+    background: white;
+    transform: scale(1.05);
+  }
+  
+  /* ===== フッターリンク ===== */
+  .page-links {
+    text-align: center;
+    margin: 50px 0 40px;
+  }
+  
+  .page-links a {
+    margin: 0 15px;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .page-links a:hover {
+    color: white;
+  }
+  
+  /* ===== レスポンシブ対応 ===== */
+  @media (max-width: 768px) {
+    .worldview {
+      padding: 60px 15px;
+      background-attachment: scroll;
+    }
+  
+    .worldview-text {
+      padding: 20px;
+    }
+  
+    .anime-image img {
+      width: 95%;
+    }
+  }
+  
