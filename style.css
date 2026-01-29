@@ -1,131 +1,101 @@
-
-/* ===== 全体共通 ===== */
 body {
     margin: 0;
-    font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", sans-serif;
-    background: #0d0f1a;
+    font-family: sans-serif;
+    background-color: #1a1a1a;
     color: white;
   }
   
-  /* ===== ヘッダー ===== */
+  /* タイトル部分 */
   .sub-header {
     text-align: center;
-    padding: 20px;
-    background: linear-gradient(90deg, #d60000, #002bff);
-    color: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    background-color: #333;
+    padding: 15px;
   }
   
-  /* ===== 上部メイン画像 ===== */
+  /* 上の画像 */
   .anime-image {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .anime-image img {
+    width: 80%;
+    border-radius: 5px;
+  }
+  
+  /* 背景＋文章エリア */
+  .worldview {
+    background-image: url("images/heroaca-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 10px;
+  }
+  
+  /* ちょっと読みにくいけど一応暗くしてみた感 */
+  .worldview-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+  }
+  
+  /* 見出し色とりあえず変えた感 */
+  .worldview-text h2,
+  .worldview-text h3 {
+    color: yellow;
+  }
+  
+  /* ボタン */
+  .official-button {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .official-button a {
+    background-color: orange;
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 3px;
+  }
+  
+  /* フッターリンク */
+  .page-links {
     text-align: center;
     margin: 30px 0;
   }
   
-  .anime-image img {
-    width: 90%;
-    max-width: 900px;
-    border-radius: 15px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.6);
-  }
-  
-  /* ===== 背景＋文章セクション ===== */
-  .worldview {
-    position: relative;
-    margin-top: 60px;
-    padding: 100px 20px;
-    background-image: url("images/heroaca-bg.jpg"); /* 背景画像 */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
-  }
-  
-  /* 背景を暗くするオーバーレイ */
-  .worldview::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-  }
-  
-  /* テキスト本体 */
-  .worldview-text {
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.65);
-    padding: 35px;
-    border-radius: 15px;
-    line-height: 1.9;
-    box-shadow: 0 0 25px rgba(0,0,0,0.6);
-  }
-  
-  .worldview-text h2,
-  .worldview-text h3 {
-    color: #ffcc00;
-  }
-  
-  .worldview-text ul {
-    padding-left: 20px;
-  }
-  
-  /* ===== 公式サイトボタン ===== */
-  .official-button {
-    text-align: center;
-    margin-top: 25px;
-  }
-  
-  .official-button a {
-    display: inline-block;
-    background: #ffcc00;
-    color: black;
-    padding: 12px 22px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-  }
-  
-  .official-button a:hover {
-    background: white;
-    transform: scale(1.05);
-  }
-  
-  /* ===== フッターリンク ===== */
-  .page-links {
-    text-align: center;
-    margin: 50px 0 40px;
-  }
-  
   .page-links a {
-    margin: 0 15px;
-    color: #ffcc00;
+    color: lightblue;
     text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+    margin: 0 10px;
   }
   
-  .page-links a:hover {
-    color: white;
-  }
-  
-  /* ===== レスポンシブ対応 ===== */
-  @media (max-width: 768px) {
-    .worldview {
-      padding: 60px 15px;
-      background-attachment: scroll;
+  /* スマホ対応一応やった感 */
+  @media screen and (max-width: 600px) {
+    .anime-image img {
+      width: 95%;
     }
   
     .worldview-text {
-      padding: 20px;
-    }
-  
-    .anime-image img {
       width: 95%;
     }
   }
   
+
+
+  
+/* トップページ専用背景 */
+.top-page {
+    background-image: url("images/yuruhaikei.jpg");
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed;
+  }
+  
+  /* 背景の上にある白い箱を少し透けさせる */
+  .main-title,
+  .ranking-area,
+  .speech-box {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
