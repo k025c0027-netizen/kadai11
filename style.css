@@ -81,7 +81,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     text-align: center;
-    color: #ffffff;
+    color: #333;
   }
   
   .top-page {
@@ -187,6 +187,16 @@ body {
     border-color: #666 transparent transparent transparent;
   }
   
-  .worldview-text {
-    color: white;
-  }
+
+.anime-page .sub-header h1 {
+  color: white;
+}
+
+.anime-page .worldview-text {
+  color: white;
+}
+
+.anime-page .worldview-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
