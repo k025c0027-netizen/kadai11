@@ -5,15 +5,13 @@ body {
     color: white;
   }
   
-  /* タイトル部分 */
   .sub-header {
     text-align: center;
     background-color: #333;
     padding: 15px;
   }
   
-  /* 上の画像 */
-  .anime-image {
+    .anime-image {
     text-align: center;
     margin: 20px 0;
   }
@@ -23,30 +21,26 @@ body {
     border-radius: 5px;
   }
   
-  /* 背景＋文章エリア */
-  .worldview {
+    .worldview {
     background-image: url("images/heroaca-bg.jpg");
     background-size: cover;
     background-position: center;
     padding: 40px 10px;
   }
   
-  /* ちょっと読みにくいけど一応暗くしてみた感 */
-  .worldview-text {
+    .worldview-text {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 15px;
     width: 80%;
     margin: auto;
   }
   
-  /* 見出し色とりあえず変えた感 */
-  .worldview-text h2,
+   .worldview-text h2,
   .worldview-text h3 {
     color: yellow;
   }
   
-  /* ボタン */
-  .official-button {
+   .official-button {
     text-align: center;
     margin-top: 15px;
   }
@@ -59,8 +53,7 @@ body {
     border-radius: 3px;
   }
   
-  /* フッターリンク */
-  .page-links {
+   .page-links {
     text-align: center;
     margin: 30px 0;
   }
@@ -71,8 +64,7 @@ body {
     margin: 0 10px;
   }
   
-  /* スマホ対応一応やった感 */
-  @media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px) {
     .anime-image img {
       width: 95%;
     }
@@ -85,7 +77,6 @@ body {
 
 
 
-/* ===== 全体 ===== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -93,7 +84,6 @@ body {
     color: #333;
   }
   
-  /* ===== 背景画像 ===== */
   .top-page {
     background-image: url("images/yuruhaikei.jpg");
     background-size: cover;
@@ -101,7 +91,6 @@ body {
     background-attachment: fixed;
   }
   
-  /* ===== タイトル ===== */
   .main-title {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 25px;
@@ -113,7 +102,6 @@ body {
     font-size: 26px;
   }
   
-  /* ===== ランキングエリア ===== */
   .ranking-area {
     width: 80%;
     margin: 40px auto;
@@ -126,7 +114,6 @@ body {
     margin-bottom: 20px;
   }
   
-  /* ===== 表彰台レイアウト ===== */
   .podium {
     display: flex;
     justify-content: center;
@@ -135,7 +122,6 @@ body {
     margin-top: 30px;
   }
   
-  /* 共通の箱 */
   .place {
     width: 160px;
     border: 1px solid #999;
@@ -154,7 +140,6 @@ body {
     text-decoration: underline;
   }
   
-  /* 順位ごとの高さと色 */
   .first {
     height: 180px;
     background-color: gold;
@@ -167,21 +152,18 @@ body {
   
   .third {
     height: 110px;
-    background-color: #cd7f32; /* 銅色 */
+    background-color: #cd7f32; 
   }
   
-  /* 順位テキスト */
   .rank {
     font-weight: bold;
     margin-bottom: 10px;
   }
   
-  /* ===== 紹介エリア ===== */
   .intro-area {
     margin: 60px 0;
   }
   
-  /* 吹き出しボックス */
   .speech-box {
     display: inline-block;
     width: 55%;
@@ -195,7 +177,6 @@ body {
     margin-top: 0;
   }
   
-  /* 吹き出しのしっぽ */
   .speech-box::after {
     content: "";
     position: absolute;
